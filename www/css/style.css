@@ -78,7 +78,7 @@ h4, h5, h6 {
 
 /* Header */
 .mdl-button--header-arrow {
-  margin-right: 16px;
+  margin-right: 40px;
 }
 
 .mdl-layout__title, .mdl-layout-title {
@@ -91,7 +91,7 @@ h4, h5, h6 {
 }
 
 .mdl-layout__header-row {
-  padding: 0 16px 0 16px;
+  padding: 0 40px 0 40px;
 }
 
 mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
@@ -112,21 +112,21 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 
 .mdl-layout__tab-bar {
   width: calc(100% - ($pads * 2));
-  padding: 0 16px 0 16px;
+  padding: 0 40px 0 40px;
 }
 
 /* Page Content */
 .page-content {
-  padding: 16px;
+  padding: 40px;
 }
 
 /* FAB Button & Buttons */
 .mdl-button--fixed {
   position: fixed;
-  bottom: 48px;
+  bottom: 120px;
   /*bottom:$pads;*/
   padding-top: 24px;
-  right: 32px;
+  right: 80px;
   /*right:$pads;*/
   z-index: 998;
 }
@@ -141,7 +141,7 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
   min-width: 100%;
   width: 100%;
   border-radius: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   min-height: 100px;
   text-decoration: none;
 }
@@ -181,7 +181,7 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
   font-size: 1rem;
   line-height: 24px;
   overflow: hidden;
-  padding: 0 16px;
+  padding: 0 40px;
   width: 100%;
 }
 .mdl-card__ubicacion .distancia {
@@ -197,7 +197,7 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
   color: rgba(0, 0, 0, 0.54);
   font-size: 16px;
   overflow: hidden;
-  padding: 16px;
+  padding: 40px;
   width: 100%;
 }
 
@@ -220,7 +220,7 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 
 /* Nuevo Suceso Page */
 .mdl-card__nuevosuceso {
-  padding: 16px;
+  padding: 40px;
 }
 
 .mdl-textfield {
@@ -228,20 +228,20 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 }
 
 .mdl-form__nuevo-suceso .mdl-submit {
-  padding-top: 16px;
+  padding-top: 40px;
 }
 
 .mdl-textfield__description {
-  margin-top: -16px;
-  padding-bottom: 16px;
+  margin-top: -40px;
+  padding-bottom: 40px;
 }
 
 .publicar-cta {
   background: #1F2232;
   /*padding: ($pads * 2) $pads;
   padding-right: 56 + ($pads*3);*/
-  padding: 16px;
-  padding-right: 88px;
+  padding: 40px;
+  padding-right: 136px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -265,6 +265,6 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 
 /* Suceso Page */
 .suceso-header {
-  padding: 16px;
+  padding: 40px;
   text-align: center;
 }
