@@ -1,0 +1,221 @@
+@font-face{
+	font-family: 'Brandon';
+	src:url(../fonts/Brandon_blk.otf);
+	font-weight: 900;
+}
+@font-face{
+	font-family: 'Brandon';
+	src:url(../fonts/Brandon_bld.otf);
+	font-weight: 700;
+}
+@font-face{
+	font-family: 'Brandon';
+	src:url(../fonts/Brandon_med.otf);
+	font-weight: 600;
+}
+@font-face{
+	font-family: 'Brandon';
+	src: url(../fonts/Brandon_reg.otf);
+	font-weight: 400;
+}
+@font-face{
+	font-family: 'Brandon';
+	src: url(../fonts/Brandon_light.otf);
+	font-weight:300;
+}
+
+/**************
+*  Variables  *
+**************/
+
+/* Typography */
+$headerfont : 'Brandon', helvetica, Arial, sans-serif;
+
+/* Colors */
+$dark : #1E1E24;
+$darkblue:#1F2232;
+$light:	#E0E2DB;
+
+
+/* Radius */
+$radius : 4px;
+
+/* Paddings */
+$pads:16px;
+
+
+
+
+
+/***************
+*  CSS Output  *
+***************/
+
+/* HTML/Body basics */
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+html,body{
+	background-color: $dark;
+	font-family: $headerfont;
+	color: $light;
+}
+
+
+/*Typography*/
+h1, h2, h3{
+	font-family: $headerfont;
+	font-weight:700;
+}
+h4, h5, h6{
+	font-family: $headerfont;
+	font-weight:400;
+}
+
+
+/* Pads / Margins / Floats */
+.pull-right{
+	float:right;
+}
+
+
+/* Header */
+.mdl-button--header-arrow{
+	margin-right:$pads;
+}
+.mdl-layout__title, .mdl-layout-title{
+	font-family: $headerfont;
+}
+.mdl-layout__header-row .mdl-button.pull-right{
+	position: absolute;
+	right:12px;
+}
+.mdl-layout__header-row{
+	padding: 0 $pads 0 $pads;
+}
+
+/* Menu */
+.mdl-menu__outline{
+	border-radius:$radius;
+}
+
+
+/*Tab bar*/
+.mdl-layout__tab-bar-left-button{
+	display:none;
+}
+.mdl-layout__tab-bar{
+	width: calc(100% - ($pads * 2));
+	padding: 0 $pads 0 $pads;
+}
+
+/* Page Content */
+.page-content{
+	padding: $pads;
+}
+
+/* FAB Button & Buttons */
+.mdl-button--fixed{
+	position: fixed;
+	bottom:($pads * 2);
+	padding-top:24px;
+	right:($pads * 2);
+	z-index:998;
+}
+.mdl-button{
+	font-family:$headerfont;
+	font-weight:900;
+}
+
+/**/
+/* Card */
+.mdl-card{
+	min-width:100%;
+	width: 100%;
+	border-radius:$radius;
+	margin-bottom:$pads;
+	min-height:100px;
+	text-decoration:none;
+}
+.mdl-card__title{
+	align-items:start;
+	justify-content: space-between;
+	padding-bottom:0;
+	/*margin-right:$pads;*/
+}
+.mdl-chip{
+	height:24px;
+	font-family: $headerfont;
+	line-height:24px;
+	padding: 0 6px;
+	margin-top:.4rem;
+	background-color: rgba($darkblue, .05)
+}
+.mdl-chip__icon{
+	font-size:1rem;
+	/*line-height:32px;*/
+	margin-right:.2em;
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.mdl-card__ubicacion{
+	color: rgba(0,0,0,.54);
+	font-size: 1rem;
+	line-height: 24px;
+	overflow: hidden;
+	padding: 0 $pads;
+	width: 100%;
+	& .distancia{
+		color:rgb(255,171,64);
+	}
+}
+.mdl-card__ubicacion .mdl-ubicacion__icon{
+	font-size:1rem;
+	color:rgb(255,171,64);
+}
+
+.mdl-card__descripcion{
+	color: rgba(0,0,0,.54);
+	font-size:16px;
+	overflow: hidden;
+	padding: $pads;
+	width: 100%;
+}
+
+/* Nuevo Suceso Page */
+.mdl-card__nuevosuceso{
+	padding:$pads;
+}
+.mdl-textfield{
+	width:100%;
+}
+.mdl-form__nuevo-suceso .mdl-submit{
+	padding-top:$pads;
+}
+.mdl-textfield__description{
+	margin-top:-$pads;
+	padding-bottom:$pads;
+}
+
+/* Light Form */
+.mdl-form__light .mdl-textfield__label{
+	color: rgba(255,255,255,.74)
+}
+.mdl-form__light .mdl-textfield__input{
+	border-bottom:1px solid rgba(255,255,255,.12);
+}
+.mdl-form__light .mdl-textfield__label:after{
+	background-color:$light;
+}
+.mdl-form__light .mdl-textfield--floating-label.is-focused .mdl-textfield__label{
+	color:$light;
+}
+
+/* Suceso Page */
+.suceso-header{
+	padding:$pads;
+	text-align:center;
+}

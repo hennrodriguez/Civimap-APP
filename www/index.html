@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>Civimap</title>
+		<link rel="stylesheet" href="css/material.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!-- <link rel="stylesheet" href="css-sprite/sprite-av-black.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+	<!--  -->
+
+<!-- Content Start -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<!-- Title -->
+			<span class="mdl-layout-title">Civimap</span>
+			<button id="user-menu" class="mdl-button mdl-js-button mdl-button--icon pull-right">
+				<i class="material-icons">more_vert</i>
+			</button>
+
+			<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+				for="user-menu">
+				<li class="mdl-menu__item">Mi cuenta</li>
+				<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Ajustes</li>
+				<li class="mdl-menu__item">Barrios</li>
+				<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Comunas</li>
+				<li class="mdl-menu__item">Acerca de</li>
+				<li class="mdl-menu__item">Terminos y Condiciones</li>
+				<li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Política de Privacidad</li>
+				<li class="mdl-menu__item">Cerrar Sesión</li>
+				<!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
+			</ul>
+		</div>
+		<!-- Tabs -->
+		<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+			<a href="#feed-reciente" class="mdl-layout__tab is-active">Reciente</a>
+			<a href="#feed-siguiendo" class="mdl-layout__tab">Siguiendo</a>
+			<!-- <a href="#crear-suceso" class="mdl-layout__tab">Nuevo</a> -->
+			<!-- <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a> -->
+			<!-- <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a> -->
+			<!-- <a href="#feed-mapa" class="mdl-layout__tab">Mapa</a> -->
+		</div>
+	</header>
+	<!-- <div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">Civimap</span>
+		<a href="#mi-cuenta">Mi Cuenta</a>
+	</div> -->
+
+	<main class="mdl-layout__content">
+		
+		<!-- Feed Recientes Start -->
+		<section class="mdl-layout__tab-panel is-active" id="feed-reciente">
+			<div class="page-content">
+
+				<!-- <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
+					<i class="material-icons">add</i>
+				</button> -->
+
+				<a href="nuevo-suceso.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
+					<i class="material-icons">add</i>
+				</a>
+				
+				<a href="suceso.html" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Incendio en Academia de Dibujo Profesional</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">24 min</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Academia de Dibujo Profesional - <span class="distancia">26m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Se presenta un leve incendio en la Academia de Dibujo Profesional, servicios de bombero ya estan en el lugar.
+					</div>
+					
+				</a>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Robo a mano armada</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">48 min</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Av 6N con 42 - Edif. Las Acacias - <span class="distancia">520m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Se presento robo en rapitienda del sector de Versalles, agentes de la policia respondieron a llamado.
+					</div>
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Disturbios por hinchas del Deportivo Cali</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">1 hr</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Av. Vásquez Cobo - Sede del Deportivo Cali - <span class="distancia">623m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Se presentan ataques con piedras al equipo de ESMAD, ruptura de vidrios en locales comerciales cercanos y otros actos de vandalismo y de violencia.
+					</div>
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Pleito de ebrios</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">1 hr</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Av 3 #52n - 28 - <span class="distancia">698m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Discusion entre dos hombres en estado de embriaguez, amenazan con virios de botellas rotas.
+					</div>
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Atentado sicarial</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">2hr</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Cr 3 con Cll 59D - <span class="distancia">837m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Hombre pierde la vida cuando es ultimado por lo que según reportes era un joven menor de edad que dispara mientras este se encontraba en la panadería del sector.
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Feed Recientes End -->
+		
+		<!-- Feed Siguiendo Start -->
+		<section class="mdl-layout__tab-panel" id="feed-siguiendo">
+			<div class="page-content">
+				
+				<a href="nuevo-suceso.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
+					<i class="material-icons">add</i>
+				</a>
+
+				<!-- <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
+					<i class="material-icons">add</i>
+				</button> -->
+				
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Incendio en Academia de Dibujo Profesional</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">24 min</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Academia de Dibujo Profesional - <span class="distancia">26m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Se presenta un leve incendio en la Academia de Dibujo Profesional, servicios de bombero ya estan en el lugar.
+					</div>
+					
+						<!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							Get Started
+						</a> -->
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Robo a mano armada</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">48 min</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Av 6N con 42 - Edif. Las Acacias - <span class="distancia">520m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Se presento robo en rapitienda del sector de Versalles, agentes de la policia respondieron a llamado.
+					</div>
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Disturbios por hinchas del Deportivo Cali</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">1 hr</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Av. Vásquez Cobo - Sede del Deportivo Cali - <span class="distancia">623m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Se presentan ataques con piedras al equipo de ESMAD, ruptura de vidrios en locales comerciales cercanos y otros actos de vandalismo y de violencia.
+					</div>
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Pleito de ebrios</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">1 hr</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Av 3 #52n - 28 - <span class="distancia">698m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Discusion entre dos hombres en estado de embriaguez, amenazan con virios de botellas rotas.
+					</div>
+				</div>
+
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Atentado sicarial</h2>
+						<span class="mdl-chip pull-right">
+							<i class="mdl-chip__icon material-icons">schedule</i>
+							<span class="mdl-chip__text">2hr</span>
+						</span>
+					</div>
+					<div class="mdl-card__ubicacion">
+						<i class="mdl-ubicacion__icon material-icons">room</i>Cr 3 con Cll 59D - <span class="distancia">837m</span>
+					</div>
+					<div class="mdl-card__descripcion">
+						Hombre pierde la vida cuando es ultimado por lo que según reportes era un joven menor de edad que dispara mientras este se encontraba en la panadería del sector.
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Feed Siguiendo End -->
+
+		<!-- Nuevo Suceso Start -->
+		<!-- <section class="mdl-layout__tab-panel" id="crear-suceso">
+			<div class="page-content">
+
+				<div class="mdl-card mdl-card__nuevosuceso mdl-shadow--2dp">
+
+					<h3>Reporta un suceso</h3>
+					
+					<form class="mdl-form mdl-form__nuevo-suceso" id="nuevo-suceso" action="#">
+						
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="nombre_suceso">
+							<label class="mdl-textfield__label" for="nombre_suceso">Nombre...</label>
+						</div>
+						<div class="mdl-textfield__description">
+							<small>Asigna un nombre a lo que sucede.</small>
+						</div>
+
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<textarea class="mdl-textfield__input" type="text" rows= "3" id="descripcion_suceso" ></textarea>
+							<label class="mdl-textfield__label" for="descripcion_suceso">Descripción...</label>
+						</div>
+						<div class="mdl-textfield__description">
+							<small>Describe brevemente el hecho.</small>
+						</div>
+						
+						<div class="mdl-submit">
+							<input class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" type="submit" value="Publicar Suceso">
+						</div>
+
+
+					</form>
+
+				</div>
+
+		
+	
+
+					
+
+				</form>
+
+				<div class="mensaje"></div>
+			</div>
+		</section> -->
+		<!-- Nuevo Suceso Start -->
+
+		<!-- <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+			<div class="page-content"></div>
+		</section> -->
+
+		<!-- <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+			<div class="page-content"></div>
+		</section> -->
+
+		<!-- Feed Mapa Start -->
+		<!-- <section class="mdl-layout__tab-panel is-active" id="feed-mapa">
+			<div class="page-content">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-button--fixed">
+					<i class="material-icons">add</i>
+				</button>
+				<h3>Mapa</h3>
+			</div>
+		</section> -->
+		<!-- Feed Mapa End -->
+
+	</main>
+</div>
+<!-- Content End -->
+
+		<!-- <script type="text/javascript" src="cordova.js"></script> -->
+		<script type="text/javascript" src="js/material.min.js"></script>
+	</body>
+</html>

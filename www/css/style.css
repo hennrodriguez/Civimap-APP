@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/Brandon_blk.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/Brandon_bld.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/Brandon_med.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/Brandon_reg.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/Brandon_light.otf);
+  font-weight: 300;
+}
+/**************
+*  Variables  *
+**************/
+/* Typography */
+/* Colors */
+/* Radius */
+/* Paddings */
+/***************
+*  CSS Output  *
+***************/
+/* HTML/Body basics */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: #1E1E24;
+  font-family: "Brandon", helvetica, Arial, sans-serif;
+  color: #E0E2DB;
+}
+
+/*Typography*/
+h1, h2, h3 {
+  font-family: "Brandon", helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-family: "Brandon", helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Pads / Margins / Floats */
+.pull-right {
+  float: right;
+}
+
+/* Header */
+.mdl-button--header-arrow {
+  margin-right: 16px;
+}
+
+.mdl-layout__title, .mdl-layout-title {
+  font-family: "Brandon", helvetica, Arial, sans-serif;
+}
+
+.mdl-layout__header-row .mdl-button.pull-right {
+  position: absolute;
+  right: 12px;
+}
+
+.mdl-layout__header-row {
+  padding: 0 16px 0 16px;
+}
+
+/* Menu */
+.mdl-menu__outline {
+  border-radius: 4px;
+}
+
+/*Tab bar*/
+.mdl-layout__tab-bar-left-button {
+  display: none;
+}
+
+.mdl-layout__tab-bar {
+  width: calc(100% - ($pads * 2));
+  padding: 0 16px 0 16px;
+}
+
+/* Page Content */
+.page-content {
+  padding: 16px;
+}
+
+/* FAB Button & Buttons */
+.mdl-button--fixed {
+  position: fixed;
+  bottom: 32px;
+  padding-top: 24px;
+  right: 32px;
+  z-index: 998;
+}
+
+.mdl-button {
+  font-family: "Brandon", helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
+/**/
+/* Card */
+.mdl-card {
+  min-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  min-height: 100px;
+  text-decoration: none;
+}
+
+.mdl-card__title {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0;
+  /*margin-right:$pads;*/
+}
+
+.mdl-chip {
+  height: 24px;
+  font-family: "Brandon", helvetica, Arial, sans-serif;
+  line-height: 24px;
+  padding: 0 6px;
+  margin-top: .4rem;
+  background-color: rgba(31, 34, 50, 0.05);
+}
+
+.mdl-chip__icon {
+  font-size: 1rem;
+  /*line-height:32px;*/
+  margin-right: .2em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.mdl-card__ubicacion {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+  line-height: 24px;
+  overflow: hidden;
+  padding: 0 16px;
+  width: 100%;
+}
+.mdl-card__ubicacion .distancia {
+  color: #ffab40;
+}
+
+.mdl-card__ubicacion .mdl-ubicacion__icon {
+  font-size: 1rem;
+  color: #ffab40;
+}
+
+.mdl-card__descripcion {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 16px;
+  overflow: hidden;
+  padding: 16px;
+  width: 100%;
+}
+
+/* Nuevo Suceso Page */
+.mdl-card__nuevosuceso {
+  padding: 16px;
+}
+
+.mdl-textfield {
+  width: 100%;
+}
+
+.mdl-form__nuevo-suceso .mdl-submit {
+  padding-top: 16px;
+}
+
+.mdl-textfield__description {
+  margin-top: -16px;
+  padding-bottom: 16px;
+}
+
+/* Light Form */
+.mdl-form__light .mdl-textfield__label {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.mdl-form__light .mdl-textfield__input {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mdl-form__light .mdl-textfield__label:after {
+  background-color: #E0E2DB;
+}
+
+.mdl-form__light .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+  color: #E0E2DB;
+}
+
+/* Suceso Page */
+.suceso-header {
+  padding: 16px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
