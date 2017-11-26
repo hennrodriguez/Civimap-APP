@@ -56,6 +56,21 @@ h4, h5, h6 {
   font-weight: 400;
 }
 
+/* SVG Icons */
+.svg-icon__light {
+  color: white;
+}
+
+.svg-icon__24px {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-12px, -12px);
+  transform: translate(-12px, -12px);
+}
+
 /* Pads / Margins / Floats */
 .pull-right {
   float: right;
@@ -77,6 +92,12 @@ h4, h5, h6 {
 
 .mdl-layout__header-row {
   padding: 0 16px 0 16px;
+}
+
+mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
+  display: none;
+  visibility: hidden;
+  cursor: default;
 }
 
 /* Menu */
