@@ -123,11 +123,11 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 /* FAB Button & Buttons */
 .mdl-button--fixed {
   position: fixed;
-  /*bottom:($pads * 3);*/
-  bottom: 16px;
+  bottom: 48px;
+  /*bottom:$pads;*/
   padding-top: 24px;
-  /*right:($pads * 2);*/
-  right: 16px;
+  right: 32px;
+  /*right:$pads;*/
   z-index: 998;
 }
 
@@ -136,7 +136,6 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
   font-weight: 900;
 }
 
-/**/
 /* Card */
 .mdl-card {
   min-width: 100%;
@@ -261,7 +260,7 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
   font-weight: 700;
   text-transform: uppercase;
   color: #E0E2DB;
-  min-height: 56px;
+  min-height: 44px;
 }
 
 /* Suceso Page */
@@ -269,5 +268,3 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
   padding: 16px;
   text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */

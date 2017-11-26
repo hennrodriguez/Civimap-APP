@@ -139,11 +139,11 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 /* FAB Button & Buttons */
 .mdl-button--fixed{
 	position: fixed;
-	/*bottom:($pads * 3);*/
-	bottom:$pads;
+	bottom:($pads * 3);
+	/*bottom:$pads;*/
 	padding-top:24px;
-	/*right:($pads * 2);*/
-	right:$pads;
+	right:($pads * 2);
+	/*right:$pads;*/
 	z-index:998;
 }
 .mdl-button{
@@ -151,7 +151,6 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 	font-weight:900;
 }
 
-/**/
 /* Card */
 .mdl-card{
 	min-width:100%;
@@ -254,7 +253,7 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 	font-weight:700;
 	text-transform:uppercase;
 	color: $light;
-	min-height:56px;
+	min-height:44px;
 }
 
 
