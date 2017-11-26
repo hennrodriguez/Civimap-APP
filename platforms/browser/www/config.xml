@@ -4,9 +4,11 @@
     <description>
         Enterate de los que pasa a tu alrededor.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="support@civimap.co" href="https://civimapo.co">
+        Civimap Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="http://especialistasenlaweb.com" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
 </widget>
