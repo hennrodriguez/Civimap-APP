@@ -123,9 +123,11 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 /* FAB Button & Buttons */
 .mdl-button--fixed {
   position: fixed;
-  bottom: 32px;
+  /*bottom:($pads * 3);*/
+  bottom: 16px;
   padding-top: 24px;
-  right: 32px;
+  /*right:($pads * 2);*/
+  right: 16px;
   z-index: 998;
 }
 
@@ -237,8 +239,10 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button {
 
 .publicar-cta {
   background: #1F2232;
-  padding: 32px 16px;
-  padding-right: 104px;
+  /*padding: ($pads * 2) $pads;
+  padding-right: 56 + ($pads*3);*/
+  padding: 16px;
+  padding-right: 88px;
   position: fixed;
   bottom: 0;
   left: 0;
