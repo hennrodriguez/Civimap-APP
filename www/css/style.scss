@@ -34,7 +34,19 @@ $headerfont : 'Brandon', helvetica, Arial, sans-serif;
 /* Colors */
 $dark : #1E1E24;
 $darkblue:#1F2232;
+$grey: #403F4C;
 $light:	#E0E2DB;
+
+$amarillo: #FFD740;
+$naranja: #FFAB40;
+$verde: #9FD356;
+$turquesa: #1B998B;
+$turquesaosc: #077187;
+$rojo: #BF211E;
+$azulosc: #21295C;
+$azul: #1B3B6F;
+$azulcla: #2274A5;
+
 
 
 /* Radius */
@@ -150,6 +162,9 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 	font-family:$headerfont;
 	font-weight:900;
 }
+.mdl-button--green{
+	background-color: $verde;
+}
 
 /* Card */
 .mdl-card{
@@ -174,6 +189,9 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 	margin-top:.4rem;
 	background-color: rgba($darkblue, .05)
 }
+.mdl-chip__text{
+	font-size:14px;
+}
 .mdl-chip__icon{
 	font-size:1rem;
 	/*line-height:32px;*/
@@ -190,17 +208,18 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 	padding: 0 $pads;
 	width: 100%;
 	& .distancia{
-		color:rgb(255,171,64);
+		color:$naranja;
 	}
 }
 .mdl-card__ubicacion .mdl-ubicacion__icon{
 	font-size:1rem;
-	color:rgb(255,171,64);
+	color:$naranja;
 }
 
 .mdl-card__descripcion{
 	color: rgba(0,0,0,.54);
 	font-size:16px;
+	line-height:1.6;
 	overflow: hidden;
 	padding: $pads;
 	width: 100%;
@@ -258,7 +277,39 @@ mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button{
 
 
 /* Suceso Page */
-.suceso-header{
-	padding:$pads;
+.card-suceso__header{
+	color:#000;
+	padding: $pads;
 	text-align:center;
+	justify-content:center;
+}
+.card-suceso__details{
+	text-align:center;
+	color: rgba(0,0,0,.5);
+	padding-bottom:$pads / 2;
+}
+.card-suceso__details .detail{
+	font-size:14px;
+	line-height:20px;
+	display: inline-flex;
+	vertical-align: middle;
+	
+}
+.card-suceso__details .detail-icon{
+	font-size: 1rem;
+	line-height: 20px;
+	color: $naranja;
+}
+.card-suceso__ubicacion{
+	font-size:16px;
+	line-height:20px;
+	color: rgba(0,0,0,.5);
+	display: inline-flex;
+	vertical-align: middle;
+	justify-content:center;
+}
+.card-suceso__ubicacion .ubicacion-icon{
+	font-size:20px;
+	line-height:20px;
+	color: $naranja;
 }
