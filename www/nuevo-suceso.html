@@ -42,24 +42,34 @@
 	<main class="mdl-layout__content">
 		<div class="page-content">
 				
-			<form class="mdl-form mdl-form__light mdl-form__nuevo-suceso" id="nuevo-suceso" action="#">
-				
+			<form class="mdl-form mdl-form__light mdl-form__nuevo-suceso" id="suceso_nuevo" action="#">
+
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="nombre_suceso">
-					<label class="mdl-textfield__label" for="nombre_suceso">Nombre...</label>
+					<input class="mdl-textfield__input" type="text" id="suceso_titulo">
+					<label class="mdl-textfield__label" for="suceso_titulo">Título...</label>
 				</div>
 				<div class="mdl-textfield__description">
 					<small>Asigna un nombre a lo que sucede.</small>
 				</div>
 
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<textarea class="mdl-textfield__input" type="text" rows= "3" id="descripcion_suceso" ></textarea>
-					<label class="mdl-textfield__label" for="descripcion_suceso">Descripción...</label>
+					<input class="mdl-textfield__input" type="text" id="suceso_ubicacion">
+					<label class="mdl-textfield__label" for="suceso_ubicacion">Ubicación...</label>
+				</div>
+				<div class="mdl-textfield__description">
+					<small>¿Dónde se presenta lo sucedido?</small>
+				</div>
+
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<textarea class="mdl-textfield__input" type="text" rows= "3" id="suceso_descripcion" ></textarea>
+					<label class="mdl-textfield__label" for="suceso_descripcion">Descripción...</label>
 				</div>
 				<div class="mdl-textfield__description">
 					<small>Describe brevemente el hecho.</small>
 				</div>
-				
+
+				<input id="suceso_status" type="hidden" value="publico">
+								
 				<div class="mdl-submit">
 					<input class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent pull-right" type="submit" value="Publicar Suceso">
 				</div>
@@ -75,7 +85,7 @@
 
 		</div>
 
-		<a href="nuevo-suceso.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
+		<a href="#" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
 			<i class="material-icons">check</i>
 		</a>
 
@@ -90,6 +100,8 @@
 <!-- Content End -->
 
 		<!-- <script type="text/javascript" src="cordova.js"></script> -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/material.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
 	</body>
 </html>
