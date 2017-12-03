@@ -12,7 +12,7 @@
 
 	if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-		echo "<a href='suceso.html' class='mdl-card mdl-shadow--2dp suceso-id__" . $row["id"]. "' id='" . $row["id"]. "'>
+		echo "<a href='#' class='mdl-card mdl-card__suceso mdl-shadow--2dp suceso-id__" . $row["id"]. "' id='" . $row["id"]. "'>
 			<div class='mdl-card__title'>
 				<h2 class='mdl-card__title-text'>" . $row["suceso_titulo"]. "</h2>
 				<span class='mdl-chip pull-right'>

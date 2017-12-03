@@ -18,3 +18,9 @@ $.ajax({
 }).done(function(respuesta){
 	$("#sucesos_bd").html(respuesta);
 });
+
+// $(".mdl-card__suceso").on('click',function(){
+// 	alert(this.id);
+// 	// var id = $(this).attr('id');
+// 	// console.info(id);
+// });
