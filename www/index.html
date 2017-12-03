@@ -38,6 +38,7 @@
 		<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
 			<a href="#feed-reciente" class="mdl-layout__tab is-active">Reciente</a>
 			<a href="#feed-siguiendo" class="mdl-layout__tab">Siguiendo</a>
+			<a href="#feed-bd" class="mdl-layout__tab">Base</a>
 			<!-- <a href="#crear-suceso" class="mdl-layout__tab">Nuevo</a> -->
 			<!-- <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a> -->
 			<!-- <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a> -->
@@ -54,10 +55,6 @@
 		<!-- Feed Recientes Start -->
 		<section class="mdl-layout__tab-panel is-active" id="feed-reciente">
 			<div class="page-content">
-
-				<!-- <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
-					<i class="material-icons">add</i>
-				</button> -->
 
 				<a href="nuevo-suceso.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
 					<i class="material-icons">add</i>
@@ -248,77 +245,27 @@
 		</section>
 		<!-- Feed Siguiendo End -->
 
-		<!-- Nuevo Suceso Start -->
-		<!-- <section class="mdl-layout__tab-panel" id="crear-suceso">
+		<!-- Feed Base de Datos Start -->
+		<section class="mdl-layout__tab-panel" id="feed-bd">
 			<div class="page-content">
-
-				<div class="mdl-card mdl-card__nuevosuceso mdl-shadow--2dp">
-
-					<h3>Reporta un suceso</h3>
-					
-					<form class="mdl-form mdl-form__nuevo-suceso" id="nuevo-suceso" action="#">
-						
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<input class="mdl-textfield__input" type="text" id="nombre_suceso">
-							<label class="mdl-textfield__label" for="nombre_suceso">Nombre...</label>
-						</div>
-						<div class="mdl-textfield__description">
-							<small>Asigna un nombre a lo que sucede.</small>
-						</div>
-
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-							<textarea class="mdl-textfield__input" type="text" rows= "3" id="descripcion_suceso" ></textarea>
-							<label class="mdl-textfield__label" for="descripcion_suceso">Descripción...</label>
-						</div>
-						<div class="mdl-textfield__description">
-							<small>Describe brevemente el hecho.</small>
-						</div>
-						
-						<div class="mdl-submit">
-							<input class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" type="submit" value="Publicar Suceso">
-						</div>
-
-
-					</form>
-
-				</div>
-
-		
-	
-
-					
-
-				</form>
-
-				<div class="mensaje"></div>
-			</div>
-		</section> -->
-		<!-- Nuevo Suceso Start -->
-
-		<!-- <section class="mdl-layout__tab-panel" id="scroll-tab-5">
-			<div class="page-content"></div>
-		</section> -->
-
-		<!-- <section class="mdl-layout__tab-panel" id="scroll-tab-6">
-			<div class="page-content"></div>
-		</section> -->
-
-		<!-- Feed Mapa Start -->
-		<!-- <section class="mdl-layout__tab-panel is-active" id="feed-mapa">
-			<div class="page-content">
-				<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-button--fixed">
+				
+				<a href="nuevo-suceso.html" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
 					<i class="material-icons">add</i>
-				</button>
-				<h3>Mapa</h3>
+				</a>
+
+				<div id="sucesos_bd"></div>
+
 			</div>
-		</section> -->
-		<!-- Feed Mapa End -->
+		</section>
+		<!-- Feed Base de datos End -->
 
 	</main>
 </div>
 <!-- Content End -->
 
 		<!-- <script type="text/javascript" src="cordova.js"></script> -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/material.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
 	</body>
 </html>

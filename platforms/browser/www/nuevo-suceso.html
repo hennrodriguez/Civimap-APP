@@ -45,7 +45,7 @@
 			<form class="mdl-form mdl-form__light mdl-form__nuevo-suceso" id="suceso_nuevo">
 
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="suceso_titulo">
+					<input class="mdl-textfield__input" type="text" id="suceso_titulo" name="suceso_titulo">
 					<label class="mdl-textfield__label" for="suceso_titulo">Título...</label>
 				</div>
 				<div class="mdl-textfield__description">
@@ -53,7 +53,7 @@
 				</div>
 
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="suceso_ubicacion">
+					<input class="mdl-textfield__input" type="text" id="suceso_ubicacion" name="suceso_ubicacion">
 					<label class="mdl-textfield__label" for="suceso_ubicacion">Ubicación...</label>
 				</div>
 				<div class="mdl-textfield__description">
@@ -61,39 +61,35 @@
 				</div>
 
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<textarea class="mdl-textfield__input" type="text" rows= "3" id="suceso_descripcion" ></textarea>
+					<textarea class="mdl-textfield__input" type="text" rows= "3" id="suceso_descripcion" name="suceso_descripcion" ></textarea>
 					<label class="mdl-textfield__label" for="suceso_descripcion">Descripción...</label>
 				</div>
 				<div class="mdl-textfield__description">
 					<small>Describe brevemente el hecho.</small>
 				</div>
 
-				<!-- <input id="suceso_status" type="hidden" value="publico"> -->
+				<input id="suceso_status" name="suceso_status" type="hidden" value="público">
 								
-				<div class="mdl-submit">
+				<div class="mdl-submit cf">
 					<input class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent pull-right" type="submit" value="Publicar Suceso">
 				</div>
 
 			</form>
 
-			<div class="mensaje"></div>
-
-			<!-- <div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
-				<div class="mdl-snackbar__text"></div>
-				<button type="button" class="mdl-snackbar__action"></button>
-			</div> -->
+			<div class="mensaje align-center">
+			</div>
 
 		</div>
 
-		<a href="#" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
+		<!-- <a href="#" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--fixed">
 			<i class="material-icons">check</i>
-		</a>
+		</a> -->
 
-		<div class="publicar-cta mdl-shadow--4dp">
+		<!-- <div class="publicar-cta mdl-shadow--4dp">
 			<span class="publicar-cta__text">
 				Publicar este suceso
 			</span>
-		</div>
+		</div> -->
 
 	</main>
 </div>

@@ -75,6 +75,11 @@ html,body{
 	color: $light;
 }
 
+.cf {
+  overflow: auto;
+  zoom: 1;
+}
+
 
 /*Typography*/
 h1, h2, h3{
@@ -84,6 +89,9 @@ h1, h2, h3{
 h4, h5, h6{
 	font-family: $headerfont;
 	font-weight:400;
+}
+.align-center{
+	text-align:center;
 }
 
 

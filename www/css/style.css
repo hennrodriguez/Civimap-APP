@@ -45,6 +45,11 @@ html, body {
   color: #E0E2DB;
 }
 
+.cf {
+  overflow: auto;
+  zoom: 1;
+}
+
 /*Typography*/
 h1, h2, h3 {
   font-family: "Brandon", helvetica, Arial, sans-serif;
@@ -54,6 +59,10 @@ h1, h2, h3 {
 h4, h5, h6 {
   font-family: "Brandon", helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /* SVG Icons */
